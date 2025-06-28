@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ccc6b6;
+    color: #333;
+}
+
+#main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f0efec;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+#main-heading h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Transaction Form */
+#for-fields {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#for-fields h3 {
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+#for-fields label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#for-fields input[type="text"],
+#for-fields input[type="number"],
+#for-fields input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    box-sizing: border-box;
+}
+
+#for-fields button {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#for-fields button:hover {
+    background-color: #2980b9;
+}
+
+/* Transactions List */
+#transaction {
+    margin-bottom: 30px;
+}
+
+#transaction h3 {
+    color: #27ae60;
+}
+
+#transaction-list span {
+    display: inline-block;
+    width: 18%;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#transaction-list {
+    margin-top: 10px;
+}
+
+
+#deleteBtn{
+    background-color: #27ae60;
+    color: white;
+}
+/* Balance Enquiry */
+#Balance-Enquiry h3 {
+    margin: 5px 0;
+}
+
+/* Pie Chart */
+canvas#myPieChart {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+/* Filter Section */
+#filterd-data {
+    margin-top: 15px;
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#filterd-data span {
+    display: inline-block;
+    width: 18%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    #transaction-list span,
+    #filterd-data span {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    #for-fields button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
